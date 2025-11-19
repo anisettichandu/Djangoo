@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'basic',
 ]
 
 MIDDLEWARE = [
@@ -47,6 +48,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'basic.middleware.UsernameMiddleware',
+    'basic.middleware.EmailMiddleware',
+    'basic.middleware.PasswordMiddleware',
 ]
 
 ROOT_URLCONF = 'myproject.urls'
