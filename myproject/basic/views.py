@@ -17,7 +17,6 @@ def SampleInfo(request):
     return JsonResponse(data)
 
 from django.views.decorators.csrf import csrf_exempt
-
 @csrf_exempt   
 def signup(request):
     if request.method=="POST":
